@@ -1,35 +1,62 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import Tweet from "./components/Tweet";
+import "./global.css";
+import twitter from "./assets/Vector.svg";
+import {
+  Bell,
+  BookmarkSimple,
+  DotsThreeCircle,
+  Envelope,
+  FileText,
+  Hash,
+  House,
+  User,
+} from "phosphor-react";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
+      <aside className="sidebar">
+        <img src={twitter} alt="" className="logo" />
+        <nav className="main-navigation">
+          <a href="">
+            <House weight="fill" className="active" />
+            Home
+          </a>
+          <a href="">
+            <Hash />
+            Explore
+          </a>
+          <a href="">
+            <Bell /> Notification
+          </a>
+          <a href="">
+            <Envelope />
+            Messages
+          </a>
+          <a href="">
+            <BookmarkSimple />
+            BookMarks
+          </a>
+          <a href="">
+            <FileText />
+            List
+          </a>
+          <a href="">
+            <User />
+            Profile
+          </a>
+          <a href="">
+            <DotsThreeCircle />
+            More
+          </a>
+        </nav>
+        <button className="btn-tweet" type="button">
+          tweet
         </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      </aside>
+      <div className="content">d</div>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

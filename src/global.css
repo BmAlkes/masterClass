@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --twiter-blue: #1da1f2;
+}
+body {
+  color: #0f1419;
+  -webkit-font-smoothing: initialiased;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+}
+
+button {
+  cursor: pointer;
+}
+a {
+  color: inherit;
+}
+
+/* pages Timeline */
+
+.App {
+  margin: 0 auto;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: 300px 1fr;
+}
+
+.sidebar {
+  padding: 1.5rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.main-navigation {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.main-navigation a {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  font-size: 1.25rem;
+  text-decoration: none;
+}
+
+.main-navigation a svg {
+  width: 2rem;
+  height: 2rem;
+}
+.main-navigation a svg.active {
+  color: var(--twiter-blue);
+}
+.sidebar .logo {
+  width: 2rem;
+  height: 2rem;
+}
+
+.sidebar .btn-tweet {
+  background: var(--twiter-blue);
+  border-radius: 999px;
+  display: flex;
+  padding: 1rem;
+  justify-content: center;
+  width: 100%;
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 900;
+  border: 0;
+}
+
+.sidebar .btn-tweet:hover {
+  filter: brightness(0.8);
+}
+
+.content {
+  border-left: 1px solid #ebeef0;
+  border-right: 1px solid #ebeef0;
+}
