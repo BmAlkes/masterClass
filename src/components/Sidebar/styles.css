@@ -23,7 +23,7 @@
   width: 2rem;
   height: 2rem;
 }
-.main-navigation a svg.active {
+.main-navigation a.active svg {
   color: var(--twiter-blue);
 }
 .sidebar .logo {

@@ -9,7 +9,7 @@ import {
   User,
 } from "phosphor-react";
 import "./styles.css";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 import twitter from "../../assets/Vector.svg";
 const Sidebar = () => {
@@ -17,10 +17,10 @@ const Sidebar = () => {
     <aside className="sidebar">
       <img src={twitter} alt="" className="logo" />
       <nav className="main-navigation">
-        <Link to="/">
-          <House weight="fill" className="active" />
+        <NavLink to="/">
+          <House weight="fill" />
           Home
-        </Link>
+        </NavLink>
         <a href="">
           <Hash />
           Explore

@@ -11,10 +11,7 @@ import { router } from "./routes/routes";
 function App() {
   return (
     <div className="App">
-      <Sidebar />
-      <div className="content">
-        <RouterProvider router={router} />
-      </div>
+      <RouterProvider router={router} />
     </div>
   );
 }
